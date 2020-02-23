@@ -1,3 +1,10 @@
+
+The Technologies used to develop this application were:
+
+  1. Angular
+
+  The total time it took me to develop the entire application was around 4 hrs. What it took me the most was the Twiter api     integration
+
 # WebApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.3.

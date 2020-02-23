@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="col-sm">
+        <img [src]="portfolioModel.imageURL" class="img-thumbnail img-circle" alt="loading">
+    </div>
+
+</div>
+
+<br>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <h1 class="color-blue"> {{ portfolioModel.title}} </h1>
+            <h3> @{{ portfolioModel.twitterUserName }} </h3>
+        </div>
+        <div class="col-sm">
+            <h4>Description:</h4>
+            <h2>{{ portfolioModel.description }}</h2>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="row">
+        <h4>Tweets:</h4>
+    </div>
+    <div class="row">
+        <ul>
+            <li *ngFor="let tweet of tweets">
+                <span>
+                    <h5>{{ tweet.user }}:</h5>
+                </span> {{ tweet.tweet }}
+            </li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,10 @@
+<div class="container search-container space-nav">
+  <div class="row">
+    <div class="col">
+      <input #search type="text" (keyup.enter)= "searchPortfolio(search.value)" class="form-control" placeholder="Search by portFolio id...">
+    </div>
+  </div>
+</div>
+<div *ngIf="isShowPanel">
+  <app-portfolio-information [portfolioModel]="portfolioModel" [tweets]="tweets"></app-portfolio-information>
+</div>
